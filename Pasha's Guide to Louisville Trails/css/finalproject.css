@@ -5,11 +5,6 @@
 }
 
 
-
-
-
-
-
 html {
     font-size: 16px;
     margin: 0;
@@ -17,21 +12,20 @@ html {
 }
 
 body {
-    background-color: #dadbd9;
+    background-color: #a6a797;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top:50px;
 }
 a:link {
     text-decoration: none;
-    color: rgb(4, 78, 4);
+    color: rgb(0, 0, 0);
     font-weight:bolder;
     
     
 }
 
-ul#menu li {
-    display:inline;
-    
-  }
 
 
 
@@ -144,20 +138,94 @@ padding-left:30px;
     display: flex;
     flex-direction: row;
     list-style-type: none;
-    justify-content: space-around;
+    justify-content:space-evenly;
+
 }
 
+ul.menu_items {
+   margin-left:-40px;
+   margin-right:0px;
+}
+.button {
+    background-color: #5f7464b2;
+    border: none;
+    color: rgb(0, 0, 0);
+    padding: 16px 32px;
+    text-align: center;
+    font-size: 20px;
+    margin: 4px 2px;
+    opacity: 1;
+    transition: 0.3s;
+    border-radius:20px;
+    width:300px;
+    
+  }
+  
+  .button:hover {opacity: 0.6}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media screen and (max-width: 480px) {
+
+    body {
+        background-color: #a6a797;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        margin-left:0px;
+        margin-top:0px;
+        margin-right:0px;
+    }
+
 .menu_items {
 
-    flex-direction:column;
-    justify-content:left;
-    list-style-type:initial;         
+    flex-direction: column;
+    
+    list-style-type:none;
+    align-items:center;      
 }
 
 .header {
 text-align: left;
 font-size: 23px;
+border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    align-items:center;
 }
 .title {
     font-size: 20px;
@@ -185,6 +253,30 @@ font-size: 23px;
     font-size: 15px;
 }
 
+.footer {
+    text-align:center;
+    background-color: #4e4e4e ;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+}
+
+.button {
+    background-color: #5f7464b2;
+    border: none;
+    color: rgb(0, 0, 0);
+    padding: 16px 32px;
+    text-align: center;
+    font-size: 16px;
+    margin: 10px 0px;
+    opacity: 1;
+    transition: 0.3s;
+    border-radius:20px;
+    width:300px;
+    
+  }
+  
+  .button:hover {opacity: 0.6}
 
 
 
