@@ -1,0 +1,465 @@
+
+/* HTML Normalize Section */
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}main{display:block}h1{font-size:2em;margin:.67em 0}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}button,input,optgroup,select,textarea{font-family:inherit;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details{display:block}summary{display:list-item}template{display:none}[hidden]{display:none}
+* {box-sizing: border-box;}
+
+/* HTML Element Styling Block */
+  html {
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+  }
+
+/* Body Element Styling Block */
+  body {
+    background-color: #a6a797;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top:50px;
+  }
+
+/* General Hyperlink Styling Block */  
+  a:link {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight:bolder;   
+  }
+
+/* Title Div Styling Block */
+  .title {
+    background-color: #554a38;
+    color: white;
+    text-align: center;
+    margin-top:-85px;
+    font-size: 35px;
+    padding-top: 0px;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content:space-around;
+  }
+
+  .title-text {
+    display:flex;
+    position:sticky;
+    justify-content:left;
+  }
+
+/* Header Div Styling Block */
+  .header {
+    background-color: #E3D477;
+    font-size:35px;
+    font-style:normal;
+    text-align: center;
+    padding-top:2px;
+    padding-bottom:2px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+  }
+
+/* Header Menu Styling Block */
+  .menu_items {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    justify-content:space-evenly;
+  }
+
+  ul.menu_items {
+    margin-left:-40px;
+    margin-right:0px;
+  }
+
+  .button {
+    background-color: #5f7464b2;
+    border: none;
+    color: rgb(0, 0, 0);
+    padding: 16px 32px;
+    text-align: center;
+    font-size: 20px;
+    margin: 4px 2px;
+    opacity: 1;
+    transition: 0.3s;
+    border-radius:20px;
+    width:300px;
+  }
+  
+  .button:hover {opacity: 0.6}
+
+/* Paragraph 1 Styling Block */
+  .main_text1 {
+    background-color: rgba(251, 255, 253, 0.842);
+    margin-top:50px;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 50px;
+    border-radius: 30px;
+    display: flex;
+    align-items: left;
+  }
+
+  #main_paragraph1 {
+    font-size: 25px;
+    color: rgb(24, 7, 7);
+    padding-left:30px;
+  }
+
+/* Paragraph 2 Styling Block */
+  .main_text2 {
+    background-color: rgba(251, 255, 253, 0.842);
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 100px;
+    border-radius: 30px;
+  }
+  
+  #main_paragraph2 {
+    font-size: 25px;
+    color: rgb(24, 7, 7);
+    padding-left:30px;
+  }
+
+/* Footer Styling Block  */
+  .footer {
+    text-align:center;
+    background-color: #4e4e4e ;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  #footer_p1 {
+    font-size: 18px;
+    text-align: left;
+    font-weight:bolder;
+    color: white;
+  }
+
+  #footer_p2 {
+    font-size: 16px;
+    text-align: left;
+    font-weight:normal;
+    font-style: italic;
+    color: white;
+  }
+
+
+
+
+
+
+/* WORK ON ORGANIZING THIS TOMORROW. INCLUDES: NAVIGATION MENU STYLING AS WELL AS SLIDESHOW STYLING AND MEDIA QUERIES */
+
+ 
+
+  /* Style navigation menu links */
+  .topnav a {
+    color: white;
+    display:flex;
+    text-decoration: none;
+    font-size: 50px;
+    
+    justify-content:center;
+   
+  }
+  
+  /* Style the hamburger menu */
+  .topnav a.icon {
+    background:#554a38 ;
+    display: flex;
+    font-size: 45px;
+    
+
+  }
+
+#nav-list {
+  font-size:33px;
+  
+}
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+/* Style the navigation menu */
+.topnav {
+    overflow: hidden;
+    background-color: #554a38;
+    display:flex;
+    justify-content:left;
+    
+  }
+ 
+  .topnav-menu {
+position: relative;
+
+
+  }
+    /* Hide the links inside the navigation menu (except for logo/home) */
+
+  .topnav-menu #myLinks {
+    
+    padding-top:10px;
+    padding-bottom:10px;
+    padding-left:20px;
+    background-color:#a6a7972c;
+    display:none;
+    font-size: 30px;
+    text-align:start;
+    line-height:150%;
+    
+    
+  }
+ 
+
+ 
+
+  /* Style navigation menu links */
+  .topnav a {
+    color: white;
+    padding: 30px 30px;
+    text-decoration: none;
+    font-size: 60px;
+    display:block;
+    justify-content:left;
+    
+  }
+  
+  /* Style the hamburger menu */
+  .topnav a.icon {
+    background:#554a38 ;
+    display: flex;
+    
+
+  }
+  
+ 
+  * {box-sizing:border-box}
+
+  /* Slideshow container */
+  .slideshow-container {
+    max-width: 1200px;
+    
+    position: relative;
+    margin-top: 60px;
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom:auto;
+    
+    
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display:none;
+    
+    
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  /* Caption text */
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
+
+
+
+
+
+
+
+
+
+  @media screen and (max-width: 480px) {
+
+    body {
+        background-color: #a6a797;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        margin-left:0px;
+        margin-top:0px;
+        margin-right:0px;
+    }
+
+
+  
+
+
+.menu_items {
+
+    flex-direction: column;
+    
+    list-style-type:none;
+    align-items:center;      
+}
+
+.header {
+text-align: left;
+font-size: 23px;
+border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    align-items:center;
+}
+.title {
+    font-size: 27px;
+    text-align: center;
+    margin-top:-45px;
+   
+}
+
+
+#main_paragraph1 {
+    font-size: 17px;
+}
+
+#main_paragraph2 {
+    font-size: 17px;
+}
+
+#footer_p1 {
+    font-size: 20px;
+}
+#footer_p2 {
+    font-size: 15px;
+}
+
+.footer {
+    text-align:center;
+    background-color: #4e4e4e ;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+}
+
+.button {
+    background-color: #5f7464b2;
+    border: none;
+    color: rgb(0, 0, 0);
+    padding: 16px 32px;
+    text-align: center;
+    font-size: 16px;
+    margin: 10px 0px;
+    opacity: 1;
+    transition: 0.3s;
+    border-radius:20px;
+    width:300px;
+    
+  }
+  
+  .button:hover {opacity: 0.6}
+
+/* Style the navigation menu */
+.topnav {
+    overflow: hidden;
+    background-color: #554a38;
+    display:flex;
+    justify-content:left;
+    padding: 0 0 0px;
+    
+  }
+ 
+  .topnav-menu {
+position: relative;
+margin-left:20px;
+
+
+  }
+    /* Hide the links inside the navigation menu (except for logo/home) */
+
+  .topnav-menu #myLinks {
+    
+    
+    background-color:#a6a7972c;
+    display:none;
+    font-size: 30px;
+    text-align:start;
+    line-height:150%;
+    
+    
+  }
+}

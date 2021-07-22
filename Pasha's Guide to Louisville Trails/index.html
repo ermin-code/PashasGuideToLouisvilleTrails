@@ -1,54 +1,117 @@
 <!doctype html>
 <html lang="en"> <!--specifies the language of the element's content-->
   
+<!------------------------------------------------------------------ start of head element --------------------------------------------------------------------->
 <head>
 
   <meta charset="utf-8"> <!--tells the browser to use UTF-8 character encoding-->
 
-  <link rel="stylesheet" type ="text/css" href="css\finalproject.css"> <!--links html file to css file-->
+  <link rel="stylesheet" type ="text/css" href="css\index.css"> <!--links html file to css file-->
 
   <title>Pasha's Guide to Louisville Trails</title> <!--gives title to the tag of the index page-->
 
 </head>
+<!------------------------------------------------------------------- end of head element ---------------------------------------------------------------------->
 
+
+<!------------------------------------------------------------------ start of body element --------------------------------------------------------------------->
 <body>
 
-  <div class ="title"> <!--declares class attribute called "title"-->
-
-    <h1><!--declares h1 element and sets the title of the index page-->
-      Pasha's Guide to Louisville Trails
-    </h1>
-
+<!-------------------------------------------------------- start of hamburger menu block ------------------------------------------------------>
+  <div class="topnav">
+  <!----------------------------- "Hamburger menu" to switch on/off the navigation menu -------------------------->
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"> 
+        <img src="pics/hamburger.png" style="width:12%" > <!--link to hamburger image-->
+      </i>
+    </a>
   </div>
+<!---------------------------------------------------------- end of hamburger menu block ------------------------------------------------------>
 
-  <div class = "header"> <!--declares class attribute called "header"-->
+<!----------------------------------------------------------- start of main title block ------------------------------------------------------->
+  <div class ="title"> 
+   <h1>
+      Pasha's Guide to Louisville Trails
+   </h1>
+  </div>
+<!---------------------------------------------------------- end of main title block ----------------------------------------------------------> 
 
+<!--------------------------------------------------------start of navigation menu block ------------------------------------------------------>
+  <div class="topnav-menu">
+    <div id="myLinks">
   
-    <div class = "menu">
-      <ul class = "menu_items"> <!--creates unordered list and assigns id attribute named "menu"-->                            
-
-        <li><button class="button"><a href="louisville_trails.html">Louisville Trails</a></button></li>
-        <li><button class="button"><a href="great_pyr_breed.html">Great Pyranees Breed</a></button></li> <!--adds spacing of 30 pixels between links in the header menu-->
-        <li><button class="button"><a href="pasha_story.html">Pasha's Story</a></button></li>
-        <li><button class="button"><a href="about_me.html">About Me</a></button></li>
-      
+      <ul id="nav-list" style="list-style-image:url(pics/bone.png)">
+        <li><a href="#news" style="color: rgb(0, 0, 0)">&nbsp;&nbsp;News</a></li>
+        <li><a href="#contact" style="color: rgb(0, 0, 0)">&nbsp;&nbsp;Contact</a></li>
+        <li><a href="#about" style="color: rgb(0, 0, 0)">&nbsp;&nbsp;About</a></li>
       </ul>
     </div>
-    
-  
+  </div>
+ <!---------------------------------------------------------end of navigation menu block ------------------------------------------------------> 
+ 
+ <!------------------------------------------------------------ start of header block --------------------------------------------------------->
+ <div class = "header"> 
+    <div class = "menu">
+      <ul class = "menu_items">                          
+        <li><button class="button"><a href="louisville_trails.html">Louisville Trails</a></button></li>
+        <li><button class="button"><a href="great_pyr_breed.html">Great Pyranees Breed</a></button></li> 
+        <li><button class="button"><a href="pasha_story.html">Pasha's Story</a></button></li>
+        <li><button class="button"><a href="about_me.html">About Me</a></button></li>
+      </ul>
+    </div>
+  </div>
+<!---------------------------------------------------------------end of header block --------------------------------------------------------->
+
+<!----------------------------------------------------------- start of slideshow block ------------------------------------------------------->
+
+<!----------------------------------------------- slideshow container ------------------------------------------>
+  <div class="slideshow-container">
+
+<!-------------------------- full-width images with number and caption text ---------------------------->
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 4</div>
+    <img src="pics/pic1.jpg" style="width:100% ; border-radius:20px">
+    <div class="text">Caption Text</div>
   </div>
 
-  <div class = "main_pic">
-    
-      <img class = "pasha_pic" src="pics/pasha_main.jpg" alt="Pasha - The Great Pyranees"> <!--adds image to index page and sets alt attribute with alternative information for the image -->
-
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 4</div>
+    <img src="pics/pic2.jpg" style="width:100% ; border-radius:20px">
+    <div class="text">Caption Two</div>
   </div>
-  
 
-  <div class = "main_text1"> <!--declares class attribute called "main_text1" -->
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 4</div>
+    <img src="pics/pic3.jpg" style="width:100% ; border-radius:20px">
+    <div class="text">Caption Three</div>
+  </div>
 
-    <p id = "main_paragraph1"> <!--specifies id attribute for paragraph with name "main_paragraph1"-->
+  <div class="mySlides fade">
+    <div class="numbertext">4 / 4</div>
+    <img src="pics/pic4.jpg" style="width:100% ; border-radius:20px">
+    <div class="text">Caption Four</div>
+  </div>
 
+<!---------------------------------- next and previous buttons ---------------------------------------->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<!-------------------------------------- the dots/circles --------------------------------------------->
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+  </div>
+
+<!-------------------------------------------------------------end of slideshow block -------------------------------------------------------->
+
+<!-----------------------------------------------------------start of paragraph 1 block ------------------------------------------------------>
+  <div class = "main_text1"> 
+    <p id = "main_paragraph1">
       <br>
       Website description goes here... <!--content of paragraph 1 goes here-->
       <br>
@@ -65,14 +128,14 @@
       <br>
       <br>
       <br>
-    
     </p>
-  
   </div>
 
-  <div class = "main_text2"> <!--declares class attribute called "main_text2" -->
+<!------------------------------------------------------------end of paragraph 1 block ------------------------------------------------------->
 
-    <p id = "main_paragraph2"> <!--specifies id attribute for paragraph with name "main_paragraph2"-->
+<!-----------------------------------------------------------start of paragraph 2 block ------------------------------------------------------>
+  <div class = "main_text2">
+    <p id = "main_paragraph2">
       <br>
       Website description goes here... <!--content of paragraph 2 goes here-->
       <br>
@@ -89,19 +152,22 @@
       <br>
       <br>
       <br>
-      </p>
-  
+    </p>
+  </div>
+<!---------------------------------------------------------- end of paragraph 2 block -------------------------------------------------------->
+
+<!------------------------------------------------------------ start of footer block --------------------------------------------------------->
+  <div class = "footer">
+    <p id = "footer_p1" style="padding-left:30px">ERMIN VILA</p>
+    <p id = "footer_p2" style="padding-left:30px">&copy; Copyright 2021.</p>
   </div>
 
-<div class = "footer">
-<p id = "footer_p1" style="padding-left:30px">
-ERMIN VILA
-</p>
-<p id = "footer_p2" style="padding-left:30px">
-&copy; Copyright 2021.
-</p>
-
-</div>
+<!------------------------------------------------------------- end of footer block ---------------------------------------------------------->
 
 </body>
+<!------------------------------------------------------------------- end of body element ---------------------------------------------------------------------->
+
 </html>
+<!------------------------------------------------------------------ end of index html page -------------------------------------------------------------------->
+
+<script src="javascript\index.js"></script> <!--links html file to javascript source-->
