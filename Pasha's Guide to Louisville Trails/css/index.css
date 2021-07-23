@@ -346,8 +346,8 @@
     .header {
       text-align: left;
       font-size: 23px;
-      border-bottom-left-radius: 0px;
-      border-bottom-right-radius: 0px;
+      border-bottom-left-radius: 30px;
+      border-bottom-right-radius: 30px;
       align-items:center;
     }
   
