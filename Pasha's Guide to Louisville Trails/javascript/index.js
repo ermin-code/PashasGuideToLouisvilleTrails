@@ -1,4 +1,6 @@
-/* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
+/* Hamburger and Navigational Menu Block */
+
+/* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu */
 function myFunction() {
     var x = document.getElementById("myLinks");
     
@@ -9,11 +11,14 @@ function myFunction() {
     }
   }         
 
+
+/* Slideshow Block */
+
   var slideIndex = 1;
-showSlides(slideIndex);
+  showSlides(slideIndex);
 
 // Next/previous controls
-function plusSlides(n) {
+  function plusSlides(n) {
   showSlides(slideIndex += n);
 }
 
@@ -37,5 +42,3 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
 }
-
-
