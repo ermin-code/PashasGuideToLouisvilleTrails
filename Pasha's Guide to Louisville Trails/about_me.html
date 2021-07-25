@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en"> <!--specifies the language of the element's content-->
+  
+<!------------------------------------------------------------------ start of head element --------------------------------------------------------------------->
+<head>
+
+  <meta charset="utf-8"> <!--tells the browser to use UTF-8 character encoding-->
+
+  <link rel="stylesheet" type ="text/css" href="css\index.css"> <!--links html file to css file-->
+
+  <title>Pasha's Guide to Louisville Trails</title> <!--gives title to the tag of the index page-->
+
+</head>
+<!------------------------------------------------------------------- end of head element ---------------------------------------------------------------------->
+
+
+<!------------------------------------------------------------------ start of body element --------------------------------------------------------------------->
+<body>
+
+<!-------------------------------------------------------- start of hamburger menu block ------------------------------------------------------>
+  <div class="topnav">
+  <!----------------------------- "Hamburger menu" to switch on/off the navigation menu -------------------------->
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"> 
+        <img src="pics/hamburger.png" style="width:12%" > <!--link to hamburger image-->
+      </i>
+    </a>
+  </div>
+<!---------------------------------------------------------- end of hamburger menu block ------------------------------------------------------>
+
+<!----------------------------------------------------------- start of main title block ------------------------------------------------------->
+  <div class ="title"> 
+   <h1>
+      Pasha's Guide to Louisville Trails
+   </h1>
+  </div>
+<!---------------------------------------------------------- end of main title block ----------------------------------------------------------> 
+
+<!--------------------------------------------------------start of navigation menu block ------------------------------------------------------>
+  <div class="topnav-menu">
+    <div id="myLinks">
+  
+      <ul id="nav-list" style="list-style-image:url(pics/bone.png)">
+        <li><a href="pashas_story.html" style="color: rgb(0, 0, 0)">&nbsp;&nbsp;Pasha's Story</a></li>
+        <li><a href="great_pyr_breed.html" style="color: rgb(0, 0, 0)">&nbsp;&nbsp;Great Pyranees Breed</a></li>
+        <li><a href="index.html" style="color: rgb(0, 0, 0)">&nbsp;&nbsp;Back to Main Page</a></li>
+      </ul>
+    </div>
+  </div>
+ <!---------------------------------------------------------end of navigation menu block ------------------------------------------------------> 
+ 
+ <!------------------------------------------------------------ start of header block --------------------------------------------------------->
+ <div class = "header"> 
+    <div class = "menu">
+    <h2>
+      About Me
+    </h2>
+    </div>
+  </div>
+<!---------------------------------------------------------------end of header block --------------------------------------------------------->
+
+<!--------------------------------------------------------- start of about_me_picture block -------------------------------------------------->
+<div class = "par1andpic_container">
+  <div class = "about_me_picture">
+    <img src="pics/about_me.jpg">
+  </div>
+<!--------------------------------------------------------- end of about_me_picture block ----------------------------------------------------> 
+
+<!-----------------------------------------------------------start of paragraph 1 block ------------------------------------------------------>
+  <div class = "main_text1"> 
+    <p id = "main_paragraph1">
+      <br>
+      Website description goes here... <!--content of paragraph 1 goes here-->
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+    </p>
+  </div>
+
+<!------------------------------------------------------------end of paragraph 1 block ------------------------------------------------------->
+</div>
+<!-----------------------------------------------------------start of paragraph 2 block ------------------------------------------------------>
+  <div class = "main_text2">
+    <p id = "main_paragraph2">
+      <br>
+      Website description goes here... <!--content of paragraph 2 goes here-->
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+    </p>
+  </div>
+<!---------------------------------------------------------- end of paragraph 2 block -------------------------------------------------------->
+
+<!-------------------------------------------------------- start of contact form block ------------------------------------------------------->
+<div class = "main_text3">
+  <h3>Leave me a comment</h3>
+
+  <form id="fcf-form-id" class="fcf-form-class" method="post" action="contact-form-process.php">
+    <label for="Name" class="fcf-label">Your name</label>
+      <div class="fcf-input-group">
+        <input type="text" id="Name" name="Name" class="fcf-form-control" required>
+      </div>
+
+      <div class="fcf-form-group">
+        <label for="Email" class="fcf-label">Your email address</label>
+        <div class="fcf-input-group">
+          <input type="email" id="Email" name="Email" class="fcf-form-control" required>
+        </div>
+
+      <div class="fcf-form-group">
+        <label for="Message" class="fcf-label">Your message</label>
+        <div class="fcf-input-group">
+        <textarea id="Message" name="Message" class="fcf-form-control" rows="6" maxlength="3000" required></textarea>
+        </div>
+      </div>
+
+      <div class="fcf-form-group">
+        <button type="submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Send</button>
+
+  </form>
+</div>
+</div>
+</div>
+<!---------------------------------------------------------- end of contact form block ------------------------------------------------------->
+
+<!------------------------------------------------------------ start of footer block --------------------------------------------------------->
+  <div class = "footer">
+    <p id = "footer_p1" style="padding-left:30px">ERMIN VILA</p>
+    <p id = "footer_p2" style="padding-left:30px">&copy; Copyright 2021.</p>
+  </div>
+
+<!------------------------------------------------------------- end of footer block ---------------------------------------------------------->
+
+</body>
+<!------------------------------------------------------------------- end of body element ---------------------------------------------------------------------->
+
+</html>
+<!------------------------------------------------------------------ end of index html page -------------------------------------------------------------------->
+
+<script src="javascript\index.js"></script> <!--links html file to javascript source-->
