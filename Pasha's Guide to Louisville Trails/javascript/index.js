@@ -11,7 +11,6 @@ function myFunction() {
     }
   }         
 
-
 /* Slideshow Block */
 
   var slideIndex = 1;
