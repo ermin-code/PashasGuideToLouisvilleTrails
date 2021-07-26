@@ -514,7 +514,14 @@ input[type=submit] {
   border-radius:4px;
 }
 
-  
+input[type="email" i] {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  height: 38px;
+  max-width:100%;
+}
+
+
 
 .fcf-form-class {
   display: block;
@@ -526,6 +533,7 @@ input[type=submit] {
 .fcf-form-control {
       background-color: rgb(226, 223, 223);
       border:#c2c2c2 1px solid ;
+      width:100%;
 }
 
 /* About Me Page Styling - Media Query for Mobile Screens of 480px Screen Width */
@@ -570,11 +578,12 @@ input[type=submit] {
 
 
 input[type="email" i] {
-  width: 280px;
+  width: auto;
   height: 38px;
  margin-top:10px;
  margin-bottom:10px;
   margin-left: -55px;
+  
 }
 
 
@@ -590,7 +599,7 @@ input[type=text], select, textarea {
   margin-bottom: 10px;
   margin-left: -55px;
   resize: vertical;
-  width: 280px;
+  width: 150%;
 }
 .fcf-label {
   margin-left: -55px;
@@ -598,8 +607,16 @@ input[type=text], select, textarea {
   padding: 0px;
 }
 
+button, select {
+  text-transform: none;
+  margin-left: -55px;
+}
 
-
+.fcf-form-control {
+  background-color: rgb(226, 223, 223);
+  border: #c2c2c2 1px solid;
+  width: 150%;
+}
 }
 
 
