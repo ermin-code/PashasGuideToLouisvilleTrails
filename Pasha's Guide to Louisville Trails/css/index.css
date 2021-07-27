@@ -139,6 +139,9 @@
   
   .button:hover {opacity: 0.6}
 
+  .trail_title {
+    margin-top: 50px;
+  }
 /* Slideshow Styling Block */
   
   /* Slideshow Container */
@@ -393,6 +396,10 @@
     
     }
 
+    .trail_title {
+      margin-top: 30px;
+    }
+
 /* Slideshow Container */
     .slideshow-container {
       max-width: 450px;
@@ -571,7 +578,7 @@ input[type="email" i] {
 
 .par1andpic_container .main_text1 {
   height: auto;
-  width: 378px;
+  width: 379px;
   margin-top: 50px;
 }
 
@@ -619,5 +626,88 @@ button, select {
 }
 }
 
+/* Tom Sawyer Park Page Styling */
 
+.trail_container {
+  display: flex;
+margin-top: 50px;
+margin-left: 30x;
+margin-right: 30px;
+margin-bottom: 50px;
+  
+}
+
+.trail_container .main_text2 {
+display: block;
+  width: 1000px;
+height: 100%;
+margin-top: 0%;
+margin-bottom:0%;
+}
+
+.trail_container #main_paragraph2 {
+  width: 100%;
+}
+.trail_container img {
+margin-top: -59px;
+}
+
+.trail_container a.next {
+  margin-top: -59px;
+}
+
+.trail_container a.prev {
+  margin-top: -59px;
+}
+
+.trail_title {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: center;
+  font-size: 30px;
+
+}
+
+/* Tom Sawyer Park Page Styling - Media Query for Mobile Screens of 480px Screen Width */
+@media screen and (max-width: 480px) {
+
+.trail_container {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items:center;
+  width:100%;
+ margin-top: 50px;
+}
+
+
+
+
+.trail_pic{
+width:379px;
+height:auto;
+margin-left: 0%;
+margin-right:0%;
+}
+
+.trail_pic img {
+size: 100%;
+}
+.trail_container .main_text2 {
+  height: auto;
+  width: 379px;
+  margin-top: 50px;
+}
+
+
+.trail_title {
+
+font-size: 20px;
+
+
+}
+
+
+
+}
 
