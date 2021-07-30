@@ -117,27 +117,50 @@
 <div class = "main_text3">
   <h3>Leave me a comment</h3>
 
-  <form id="fcf-form-id" class="fcf-form-class" method="post" action="contact-form-process.php">
-    <label for="Name" class="fcf-label">Your name</label>
-      <div class="fcf-input-group">
-        <input type="text" id="Name" name="Name" class="fcf-form-control" required>
+  <form name="MyForm" id="my-form-id" class="my-form-class" method="post" action=""onsubmit = "return(validate());>
+    <label for="Name" class="my-form-label">Your name</label>
+      <div class="my-form-input-group">
+        <input type="text" id="Name" name="Name" class="my-form-input" required>
       </div>
 
-      <div class="fcf-form-group">
-        <label for="Email" class="fcf-label">Your email address</label>
-        <div class="fcf-input-group">
-          <input type="email" id="Email" name="Email" class="fcf-form-control" required>
+      <div class=" my-form-group">
+        <label for="Email" class="my-form-label">Your email address</label>
+        <div class="my-form-input-group">
+          <input type="text" id="Email" name="Email" class="my-form-input" required>
         </div>
 
-      <div class="fcf-form-group">
-        <label for="Message" class="fcf-label">Your message</label>
-        <div class="fcf-input-group">
-        <textarea id="Message" name="Message" class="fcf-form-control" rows="6" maxlength="3000" required></textarea>
+      <div class=" my-form-group">
+        <label for="Message" class="my-form-label">Your message</label>
+        <div class="my-form-input-group">
+        <textarea id="Message" name="Message" class="my-form-input" rows="6" maxlength="3000" required></textarea>
         </div>
       </div>
+<style>
 
-      <div class="fcf-form-group">
-        <button type="submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Send</button>
+
+
+
+
+
+
+
+.my-form-button {
+border-radius: 12px;
+background-color:gray;
+}
+.my-form-button {
+  transition-duration: 0.4s;
+}
+
+.my-form-button:hover {
+  background-color: rgb(80, 78, 78);
+  color: white;
+}
+</style>
+
+
+      <div class=" my-form-group">
+        <input type="button" id="mf-button" class="my-form-button" value="Send" onClick="showMessage()"/>
 
   </form>
 </div>
@@ -168,4 +191,6 @@
 </html>
 <!------------------------------------------------------------------ end of index html page -------------------------------------------------------------------->
 
-<script src="javascript\index.js"></script> <!--links html file to javascript source-->
+
+<script src="javascript\about_me.js"></script>
+<script src="javascript/index.js"></script>

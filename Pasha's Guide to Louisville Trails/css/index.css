@@ -50,8 +50,26 @@
     .topnav a.icon {
       background:#554a38 ;
       display: flex;
-      font-size: 45px;
+ 
+      
+
     }
+
+.topnav a.icon img{
+  font-size: 45px;
+  transition: 0.3s ease-in-out;
+}
+
+    .topnav a.icon img:hover {
+      transform: translateY(-3px);
+    }
+  
+    .topnav a.icon img:hover before{
+      opacity: 100;
+      }
+
+
+
 
   /* Navigational Menu Styling Block */
    
@@ -135,9 +153,23 @@
     transition: 0.3s;
     border-radius:20px;
     width:300px;
+    transition: 0.6s ease-out;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.5);
+    
   }
   
-  .button:hover {opacity: 0.6}
+  .button:hover {
+    opacity: 0.6
+    
+  }
+
+  .button:hover {
+    transform: translateY(3px);
+  }
+
+  .button:hover before{
+    opacity: 1;
+    }
 
   .trail_title {
     margin-top: 50px;
@@ -152,12 +184,40 @@
     margin-left:auto;
     margin-right:auto;
     margin-bottom:auto;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0px 10px 10px rgba(0,0,0,0.5);
+    border-top-right-radius:30px;
+    border-top-left-radius:30px;
+    border-bottom-left-radius:30px;
+    border-bottom-right-radius:30px;
+   
     }
+
+    .slideshow-container:hover {
+      transform: translateY(3px);
+      }
+      
+      
+      .slideshow-container:hover before{
+      opacity: 1;
+      }
+      
+
+
+
+
 
   /* Hide the images by default */
     .mySlides {
     display:none;
+    
+
     }
+
+   
+
+
+
 
   /* Next & previous buttons */
     .prev, .next {
@@ -217,6 +277,48 @@
     display: inline-block;
     transition: background-color 0.6s ease;
     }
+    .dotpl {
+      cursor: pointer;
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+      }
+      .dottr {
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+        }
+        .dotbrp {
+          cursor: pointer;
+          height: 15px;
+          width: 15px;
+          margin: 0 2px;
+          background-color: #bbb;
+          border-radius: 50%;
+          display: inline-block;
+          transition: background-color 0.6s ease;
+          }
+
+          .dottsp {
+            cursor: pointer;
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+            }
+
 
     .active, .dot:hover {
     background-color: #717171;
@@ -247,6 +349,8 @@
     grid-gap: 0px;
   }
 
+
+
 /* Paragraph 1 Styling Block */
   .main_text1 {
     background-color: rgba(251, 255, 253, 0.842);
@@ -254,14 +358,30 @@
     margin-left: 30px;
     margin-right: 30px;
     margin-bottom: 50px;
-    border-radius: 30px;   
+    border-radius: 30px;
+
   }
 
-  #main_paragraph1 {
+
+  .main_text1 {
     font-size: 25px;
     color: rgb(24, 7, 7);
     padding-left:30px;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.5);
   }
+
+.main_text1:hover {
+transform: translateY(3px);
+}
+
+
+.main_text1:hover before{
+opacity: 1;
+}
+
+
+
 
 /* Paragraph 2 Styling Block */
   .main_text2 {
@@ -270,14 +390,53 @@
     margin-left: 30px;
     margin-right: 30px;
     margin-bottom: 50px;
-    border-radius: 30px;   
+    border-radius: 30px; 
+    transition: 0.3s ease-in-out;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.5); 
   }
   
+  .main_text2:hover {
+    transform: translateY(3px);
+    }
+    
+    
+    .main_text2:hover before{
+    opacity: 1;
+    }
+
+
+
+
+
+
+
+
+
+
   #main_paragraph2 {
     font-size: 25px;
     color: rgb(24, 7, 7);
     padding-left:30px;
   }
+
+
+  .main_text3 {
+    transition: 0.3s ease-in-out;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.5); 
+
+  }
+
+  .main_text3:hover {
+    transform: translateY(3px);
+    }
+    
+    
+    .main_text3:hover before{
+    opacity: 1;
+    }
+
+
+
 
 /* Footer Styling Block  */
   .footer {
@@ -430,6 +589,13 @@
       font-size: 17px;
     }
 
+  
+    
+
+
+
+
+
   /* Footer Styling Block  */
   .footer {
     flex-grow: 1;
@@ -492,7 +658,7 @@ position: relative;
   
 }
 
-.main_text3 #fcf-form-id {
+.main_text3 #my-form-id {
     font-family: -apple-system, Verdana, Geneva, Tahoma, sans-serif, sans-serif;
     font-size: 1em;
     font-weight: 300;
@@ -530,7 +696,7 @@ input[type="email" i] {
 
 
 
-.fcf-form-class {
+.my-form-class {
   display: block;
   margin-left: 100px;
   margin-right: 100px;
@@ -542,6 +708,8 @@ input[type="email" i] {
       border:#c2c2c2 1px solid ;
       width:100%;
 }
+
+
 
 /* About Me Page Styling - Media Query for Mobile Screens of 480px Screen Width */
 
@@ -608,7 +776,7 @@ input[type=text], select, textarea {
   resize: vertical;
   width: 150%;
 }
-.fcf-label {
+.my-form-label {
   margin-left: -55px;
   font-size: 17px;
   padding: 0px;
@@ -705,6 +873,20 @@ size: 100%;
 font-size: 20px;
 
 
+}
+
+ .slideshow-container {
+  width: 380px;
+  height:auto;
+  margin-left:0px;
+}
+
+#index-slideshow {
+  margin-left:30px;
+}
+
+.h2 {
+  font-size: 15px;
 }
 
 

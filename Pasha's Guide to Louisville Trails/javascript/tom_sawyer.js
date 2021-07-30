@@ -11,34 +11,39 @@ function myFunction() {
     }
   }         
 
-/* Slideshow Block */
+/* Slideshow Block - Tom Sawyer Park*/
 
-  var slideIndex = 1;
-  showSlides(slideIndex);
+
+var slideIndextsp = 1;
+showSlidestsp(slideIndextsp);
+
 
 // Next/previous controls
-  function plusSlides(n) {
-  showSlides(slideIndex += n);
+function plusSlidestsp(q) {
+showSlidestsp(slideIndextsp += q);
 }
+
 
 // Thumbnail image controls
-function currentSlide(n) {
-  showSlides(slideIndex = n);
+function currentSlidetsp(q) {
+showSlidestsp(slideIndextsp = q);
 }
 
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("TomSawyer");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
+
+function showSlidestsp(q) {
+var t;
+var slidestsp = document.getElementsByClassName("TomSawyer fade");
+var dotstsp = document.getElementsByClassName("dottsp");
+if (q > slidestsp.length) {slideIndextsp = 1}
+if (q < 1) {slideIndextsp = slidestsp.length}
+for (t = 0; t < slidestsp.length; t++) {
+    slidestsp[t].style.display = "none";
+}
+for (t = 0; t < dotstsp.length; t++) {
+    dotstsp[t].className = dotstsp[t].className.replace(" active", "");
+}
+slidestsp[slideIndextsp-1].style.display = "block";
+dotstsp[slideIndextsp-1].className += " active";
+
 }
 
