@@ -6,7 +6,7 @@ This website is dedicated to my dog Pasha that passed away last year. Him and I 
 
 For Code Louisville: 
 
-- JavaScript Requirement: SlideShow
+- JavaScript Requirement: SlideShow, Hamburger Menu
 
 - CSS Requirement: Hamburger Menu
 
