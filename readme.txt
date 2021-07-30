@@ -2,7 +2,7 @@ README
 Code Louisville - May 2021 Class - Final Project - Ermin Vila
 Project Name: Pasha's Guide to Louisville Trails
 
-This website is dedicated to my dog Pasha that passed away last year. Him and I hiked a lot. I wanted to share some of our adventures and hopefully motivate people to get a dog and enjoy Louisville outdoors. Even though my website is still not complete yet, in the meantime I hope that you will be enjoy looking at some of our hiking pictures.
+This website is dedicated to my dog Pasha that passed away last year. Him and I hiked a lot. I wanted to share some of our adventures and hopefully motivate people to get a dog and enjoy Louisville outdoors. Even though my website is still not complete yet, in the meantime I hope that you will enjoy looking at some of our hiking pictures.
 
 For Code Louisville: 
 
