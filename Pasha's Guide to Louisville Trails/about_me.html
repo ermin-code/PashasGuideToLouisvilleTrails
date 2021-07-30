@@ -1,14 +1,14 @@
 <!doctype html>
-<html lang="en"> <!--specifies the language of the element's content-->
+<html lang="en"> 
   
 <!------------------------------------------------------------------ start of head element --------------------------------------------------------------------->
 <head>
 
-  <meta charset="utf-8"> <!--tells the browser to use UTF-8 character encoding-->
+  <meta charset="utf-8"> 
 
-  <link rel="stylesheet" type ="text/css" href="css\index.css"> <!--links html file to css file-->
+  <link rel="stylesheet" type ="text/css" href="css\index.css"> 
 
-  <title>Pasha's Guide to Louisville Trails</title> <!--gives title to the tag of the index page-->
+  <title>Pasha's Guide to Louisville Trails</title> 
 
 </head>
 <!------------------------------------------------------------------- end of head element ---------------------------------------------------------------------->
@@ -22,7 +22,7 @@
   <!----------------------------- "Hamburger menu" to switch on/off the navigation menu -------------------------->
     <a href="javascript:void(0);" class="icon" onclick="myFunction()">
       <i class="fa fa-bars"> 
-        <img src="pics/hamburger.png" style="width:12%" > <!--link to hamburger image-->
+        <img src="pics/hamburger.png" style="width:12%" > 
       </i>
     </a>
   </div>
@@ -70,7 +70,7 @@
   <div class = "main_text1"> 
     <p id = "main_paragraph1">
       <br>
-      Website description goes here... <!--content of paragraph 1 goes here-->
+      Website description goes here... 
       <br>
       <br>
       <br>
@@ -94,7 +94,7 @@
   <div class = "main_text2">
     <p id = "main_paragraph2">
       <br>
-      Website description goes here... <!--content of paragraph 2 goes here-->
+      Website description goes here... 
       <br>
       <br>
       <br>
@@ -117,64 +117,54 @@
 <div class = "main_text3">
   <h3>Leave me a comment</h3>
 
-  <form name="MyForm" id="my-form-id" class="my-form-class" method="post" action=""onsubmit = "return(validate());>
+  <form name="MyForm" id="my-form-id" class="my-form-class" method="submit" action="" onsubmit = "return validateForm()">
+
+  
     <label for="Name" class="my-form-label">Your name</label>
       <div class="my-form-input-group">
-        <input type="text" id="Name" name="Name" class="my-form-input" required>
+        <input type="text" id="Name" name="fname" class="my-form-input" >
       </div>
-
+  
       <div class=" my-form-group">
         <label for="Email" class="my-form-label">Your email address</label>
         <div class="my-form-input-group">
-          <input type="text" id="Email" name="Email" class="my-form-input" required>
+          <input type="text" id="Email" name="Email" class="my-form-input" >
         </div>
 
       <div class=" my-form-group">
         <label for="Message" class="my-form-label">Your message</label>
         <div class="my-form-input-group">
-        <textarea id="Message" name="Message" class="my-form-input" rows="6" maxlength="3000" required></textarea>
+        <textarea id="Message" name="Message" class="my-form-input" rows="6" maxlength="3000" ></textarea>
         </div>
       </div>
-<style>
-
-
-
-
-
-
-
-
-.my-form-button {
-border-radius: 12px;
-background-color:gray;
-}
-.my-form-button {
-  transition-duration: 0.4s;
-}
-
-.my-form-button:hover {
-  background-color: rgb(80, 78, 78);
-  color: white;
-}
-</style>
-
 
       <div class=" my-form-group">
-        <input type="button" id="mf-button" class="my-form-button" value="Send" onClick="showMessage()"/>
-
+        <input type="submit" value="Submit">
+      </div>
   </form>
 </div>
 </div>
-</div>
+
+
+<!--Form Validator Script - Please note that this is not working. I tried my best to make it work but for some reason nothing happens when I click on submit. :-/ -->
+<script>
+
+function validateForm() {
+  let x = document.forms["myForm"]["fname"].value;
+  if (x == "") {
+    alert("Name must be filled out");
+    return false;
+  }
+  else {
+    function showMessage() {
+    alert("Your message has been submitted!");
+}
+break;
+  }
+}
+</script>
+
 <!---------------------------------------------------------- end of contact form block ------------------------------------------------------->
-
-
-
-
-
-
-
-
 
 
 <!------------------------------------------------------------ start of footer block --------------------------------------------------------->
@@ -191,6 +181,4 @@ background-color:gray;
 </html>
 <!------------------------------------------------------------------ end of index html page -------------------------------------------------------------------->
 
-
-<script src="javascript\about_me.js"></script>
 <script src="javascript/index.js"></script>

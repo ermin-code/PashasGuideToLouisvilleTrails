@@ -68,9 +68,6 @@
       opacity: 100;
       }
 
-
-
-
   /* Navigational Menu Styling Block */
    
     /* Navigation Menu */
@@ -154,13 +151,11 @@
     border-radius:20px;
     width:300px;
     transition: 0.6s ease-out;
-    box-shadow: 0 10px 10px rgba(0,0,0,0.5);
-    
+    box-shadow: 0 10px 10px rgba(0,0,0,0.5);  
   }
   
   .button:hover {
     opacity: 0.6
-    
   }
 
   .button:hover {
@@ -190,33 +185,20 @@
     border-top-left-radius:30px;
     border-bottom-left-radius:30px;
     border-bottom-right-radius:30px;
-   
     }
 
     .slideshow-container:hover {
       transform: translateY(3px);
       }
-      
-      
+       
       .slideshow-container:hover before{
       opacity: 1;
       }
-      
-
-
-
-
 
   /* Hide the images by default */
     .mySlides {
     display:none;
-    
-
     }
-
-   
-
-
 
 
   /* Next & previous buttons */
@@ -349,8 +331,6 @@
     grid-gap: 0px;
   }
 
-
-
 /* Paragraph 1 Styling Block */
   .main_text1 {
     background-color: rgba(251, 255, 253, 0.842);
@@ -359,9 +339,7 @@
     margin-right: 30px;
     margin-bottom: 50px;
     border-radius: 30px;
-
   }
-
 
   .main_text1 {
     font-size: 25px;
@@ -397,21 +375,12 @@ opacity: 1;
   
   .main_text2:hover {
     transform: translateY(3px);
-    }
+  }
     
     
     .main_text2:hover before{
     opacity: 1;
     }
-
-
-
-
-
-
-
-
-
 
   #main_paragraph2 {
     font-size: 25px;
@@ -430,13 +399,9 @@ opacity: 1;
     transform: translateY(3px);
     }
     
-    
     .main_text3:hover before{
     opacity: 1;
     }
-
-
-
 
 /* Footer Styling Block  */
   .footer {
@@ -450,12 +415,9 @@ opacity: 1;
     flex-grow: 1;
       flex-direction: column;
       align-items:left;
-      width:100%;
-     
-    }
+      width:100%; 
+  }
     
-  
-
   #footer_p1 {
     font-size: 18px;
     text-align: left;
@@ -471,7 +433,7 @@ opacity: 1;
     color: white;
   }
 
-/* Media Query for Mobile Screens of 480px Screen Width */
+/* Media Query for Mobile Screens of 480px Maximum Screen Width */
 
   @media screen and (max-width: 480px) {
 
@@ -576,25 +538,16 @@ opacity: 1;
   
     #main_paragraph1 {
       font-size: 17px;
-      
     }
 
   /* Paragraph 2 Styling Block */
     .main_text2 {
       display:block;
-
     }
 
     #main_paragraph2 {
       font-size: 17px;
     }
-
-  
-    
-
-
-
-
 
   /* Footer Styling Block  */
   .footer {
@@ -614,8 +567,77 @@ opacity: 1;
       font-size: 15px;
     }
 
+    .header {
+      text-align: center;
+    }
+  
+    h3 {
+      font-size: 25px;
+    }
+  
+    .par1andpic_container {
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      align-items:center;
+      width:100%;
+      margin-top: 50px;
+  }
+  
+  .about_me_picture img {
+    width:378px;
+    height:auto;
+    margin-top: 0px;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+  
+  .par1andpic_container .main_text1 {
+    height: auto;
+    width: 379px;
+    margin-top: 50px;
+  }
+  
+  input[type="email" i] {
+    width: auto;
+    height: 38px;
+   margin-top:10px;
+   margin-bottom:10px;
+    margin-left: -55px;
+  }
+  
+  input[type=text], select, textarea {
+    width: 100%;
+    /* padding: 4px; */
+    border: 1px solid #c2c2c2;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: -55px;
+    resize: vertical;
+    width: 150%;
+  }
+  
+  .my-form-label {
+    margin-left: -55px;
+    font-size: 17px;
+    padding: 0px;
+  }
+  
+  button, select {
+    text-transform: none;
+    margin-left: -55px;
+  }
+  
+  .fcf-form-control {
+    background-color: rgb(226, 223, 223);
+    border: #c2c2c2 1px solid;
+    width: 150%;
+  }
+
+
 }
-/* About Me Page Styling */
 
 .par1andpic_container {
 display: flex;
@@ -654,8 +676,7 @@ position: relative;
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
   border-bottom-left-radius: 30px;
-  border-bottom-right-radius: 30px;
-  
+  border-bottom-right-radius: 30px; 
 }
 
 .main_text3 #my-form-id {
@@ -664,7 +685,6 @@ position: relative;
     font-weight: 300;
     color: #000000;
     text-align: left;
-   
 }
 
 input[type=text], select, textarea {
@@ -676,7 +696,6 @@ input[type=text], select, textarea {
   margin-top: 10px;
   margin-bottom: 10px;
   resize: vertical;
-  
 }
 
 input[type=submit] {
@@ -694,8 +713,6 @@ input[type="email" i] {
   max-width:100%;
 }
 
-
-
 .my-form-class {
   display: block;
   margin-left: 100px;
@@ -708,93 +725,6 @@ input[type="email" i] {
       border:#c2c2c2 1px solid ;
       width:100%;
 }
-
-
-
-/* About Me Page Styling - Media Query for Mobile Screens of 480px Screen Width */
-
-@media screen and (max-width: 480px) {
-
-  .header {
-    text-align: center;
-   
-  }
-
-  h3 {
-    font-size: 25px;
-  }
-
-
-.par1andpic_container {
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-    align-items:center;
-    width:100%;
-   margin-top: 50px;
-}
-
-.about_me_picture img {
-  width:378px;
-  height:auto;
-  margin-top: 0px;
-  margin-left: 30px;
-  margin-right: 30px;
-
-
-}
-
-.par1andpic_container .main_text1 {
-  height: auto;
-  width: 379px;
-  margin-top: 50px;
-}
-
-
-
-input[type="email" i] {
-  width: auto;
-  height: 38px;
- margin-top:10px;
- margin-bottom:10px;
-  margin-left: -55px;
-  
-}
-
-
-
-
-input[type=text], select, textarea {
-  width: 100%;
-  /* padding: 4px; */
-  border: 1px solid #c2c2c2;
-  border-radius: 4px;
-  box-sizing: border-box;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  margin-left: -55px;
-  resize: vertical;
-  width: 150%;
-}
-.my-form-label {
-  margin-left: -55px;
-  font-size: 17px;
-  padding: 0px;
-}
-
-button, select {
-  text-transform: none;
-  margin-left: -55px;
-}
-
-.fcf-form-control {
-  background-color: rgb(226, 223, 223);
-  border: #c2c2c2 1px solid;
-  width: 150%;
-}
-}
-
-/* Tom Sawyer Park Page Styling */
 
 .trail_container {
   display: flex;
@@ -833,10 +763,10 @@ margin-top: -59px;
   margin-bottom: 50px;
   text-align: center;
   font-size: 30px;
-
 }
 
-/* Tom Sawyer Park Page Styling - Media Query for Mobile Screens of 480px Screen Width */
+
+/* Media Query for Mobile Screens of 480px Maximum Screen Width */
 @media screen and (max-width: 480px) {
 
 .trail_container {
@@ -848,9 +778,6 @@ margin-top: -59px;
  margin-top: 50px;
 }
 
-
-
-
 .trail_pic{
 width:379px;
 height:auto;
@@ -861,21 +788,18 @@ margin-right:0%;
 .trail_pic img {
 size: 100%;
 }
+
 .trail_container .main_text2 {
   height: auto;
   width: 379px;
   margin-top: 50px;
 }
 
-
 .trail_title {
-
 font-size: 20px;
-
-
 }
 
- .slideshow-container {
+.slideshow-container {
   width: 380px;
   height:auto;
   margin-left:0px;
@@ -888,8 +812,270 @@ font-size: 20px;
 .h2 {
   font-size: 15px;
 }
-
-
-
 }
 
+/* Optimization for Tablet Started - Please note that only index.html page is optimized for tablet screens. I will be working on optimizing other pages as well. */
+/* For tablet screens of 768px maximum */
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+  .trail_container {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items:center;
+    width:100%;
+    margin-top: 50px;
+  }
+  
+  .pasha_image {
+    display:block;
+    width:600px;
+    height:auto;
+  }
+  
+  .div MySlides {
+    width:600px;
+  }
+  
+  .trail_pic{
+    width:379px;
+    height:auto;
+    margin-left: 0%;
+    margin-right:0%;
+  }
+  
+  .trail_pic img {
+  size: 100%;
+  }
+
+  .trail_container .main_text2 {
+    height: auto;
+    width: 379px;
+    margin-top: 50px;
+  }
+  
+  
+  .trail_title {
+    font-size: 20px;
+  }
+  
+   .slideshow-container {
+    width: 600px;
+    height:auto;
+    margin-left:0px;
+  }
+  
+  #index-slideshow {
+    margin-left:30px;
+  }
+  
+  .h2 {
+    font-size: 15px;
+  }
+  
+  .header {
+    text-align: center;
+   
+  }
+
+  h3 {
+    font-size: 25px;
+  }
+
+.par1andpic_container {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    width:100%;
+    margin-top: 50px;
+}
+
+.about_me_picture img {
+  width:378px;
+  height:auto;
+  margin-top: 0px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.par1andpic_container .main_text1 {
+  height: auto;
+  width: 379px;
+  margin-top: 50px;
+}
+
+input[type="email" i] {
+  width: auto;
+  height: 38px;
+ margin-top:10px;
+ margin-bottom:10px;
+  margin-left: -55px;  
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  /* padding: 4px; */
+  border: 1px solid #c2c2c2;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: -55px;
+  resize: vertical;
+  width: 150%;
+}
+
+.my-form-label {
+  margin-left: -55px;
+  font-size: 17px;
+  padding: 0px;
+}
+
+button, select {
+  text-transform: none;
+  margin-left: -55px;
+}
+
+.fcf-form-control {
+  background-color: rgb(226, 223, 223);
+  border: #c2c2c2 1px solid;
+  width: 150%;
+}
+
+/* Body Element Styling Block */
+  body {
+    background-color: #a6a797;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin-left:10px;
+    margin-top:10px;
+    margin-right:10px;
+  }
+ 
+  /* Navigation Menu */
+  .topnav {
+    overflow: hidden;
+    background-color: #554a38;
+    display:flex;
+    justify-content:left;
+    padding: 0 0 0px;
+  }
+
+  .topnav-menu {
+    position: relative;
+  }
+
+  /* Navigational Menu Text */
+  .topnav-menu a {
+    font-size: 25px; 
+    color:black;
+  }
+  
+/* Hide the links inside the navigation menu (except for logo/home) */
+  .topnav-menu #myLinks {
+    background-color:#e3d57781;
+    display:none;
+    font-size: 30px;
+    text-align:start;
+    line-height:150%;
+  }
+
+/* Header Menu Styling Block */
+  .header {
+    text-align: left;
+    font-size: 23px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+  }
+
+  .menu_items {
+    flex-direction: column;
+    list-style-type:none;
+    flex-wrap:wrap;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 0px;
+  }
+  
+ ul.menu_items {
+margin-left: -10px;
+ }
+
+.button {
+    background-color: #5f7464b2;
+    border: none;
+    color: rgb(0, 0, 0);
+    padding: 16px 32px;
+    text-align: center;
+    font-size: 16px;
+    margin: 10px 0px;
+    opacity: 1;
+    transition: 0.3s;
+    border-radius:20px;
+    width:300px;   
+    align-items: center;
+}
+  
+.button:hover {opacity: 0.6}
+
+/* Title Styling Block */
+.title {
+    font-size: 24px;
+    text-align: center;
+    margin-top:-45px;
+}
+
+  .grid-container {
+    display:block;
+  
+  }
+
+  .trail_title {
+    margin-top: 30px;
+  }
+
+/* Slideshow Container */
+  .slideshow-container {
+    
+    position: center;
+    margin-top: 60px;
+    margin-left:30px;
+    margin-right:30px;
+    margin-bottom:auto;
+  }
+
+/* Paragraph 1 Styling Block */
+  .main_text1 {
+    display: block;
+  }  
+
+  #main_paragraph1 {
+    font-size: 17px;
+  }
+
+/* Paragraph 2 Styling Block */
+  .main_text2 {
+    display:block;
+  }
+
+  #main_paragraph2 {
+    font-size: 17px;
+  }
+
+/* Footer Styling Block  */
+.footer {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items:left;
+  width:100%;
+}
+
+#footer_p1 {
+  font-size: 20px;
+}
+
+#footer_p2 {
+  font-size: 15px;
+}
+}
